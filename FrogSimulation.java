@@ -9,7 +9,11 @@ private int hopDistance(){
 return 0;
 }
 public boolean simulate(){
+
+    FrogSimulation sim= new FrogSimulation(24,5);
+
     return true;
+
 }
 public double runSimulations(int num){
 return 0;
