@@ -1,3 +1,5 @@
+
+
 public class FrogSimulation {
     private int goalDistance;
     private int maxHops;
@@ -8,20 +10,19 @@ public class FrogSimulation {
     }
 
     private int hopDistance() {
-        int e = (int) (Math.random() * -20) + 10;
-        System.out.println(e);
+        int e = (int) (Math.random() * 40) -20;  // range is -20 to 20
+        //System.out.println(e);
         return e;
     }
 
          public boolean simulate () {
         int sum=0;
-        System.out.println(simulate());
-        for(int i=1; i<= maxHops ;i++ ){
-            int f=0;
-            int g=0;
-            sum=hopDistance();
 
+        for(int i=1; i<= maxHops ;i++ ){
+            int hopDistance= hopDistance();
+            sum += hopDistance;
         }
+             System.out.println(sum);
         if (sum>=goalDistance) return true;
         else return false;
 
@@ -42,6 +43,7 @@ public class FrogSimulation {
         FrogSimulation instance= new FrogSimulation(24,5);
         int sim=instance.hopDistance();
         boolean s= instance.simulate();
+        System.out.println(s);
 
     }
 
