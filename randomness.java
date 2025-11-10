@@ -1,4 +1,4 @@
-TEST CODE
+//TEST CODE
 
 /* public class randomness
 {
