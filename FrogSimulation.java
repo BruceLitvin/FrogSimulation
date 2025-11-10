@@ -34,8 +34,8 @@ public class FrogSimulation {
     // if frog doesn't reach goalDistance return false
 
     public double runSimulations(int num) {
-        double attempt=0;
-      for (int i=0; i==num;i++) {
+        int attempt=0;
+      for (int i=1; i==num;i++) {
           if (simulate()==true)
               attempt++;
           else return attempt;
