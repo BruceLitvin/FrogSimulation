@@ -1,4 +1,6 @@
- /* public class randomness
+TEST CODE
+
+/* public class randomness
 {
     public static void main(String[] args){
         double b= (Math.random()*10)+16;
