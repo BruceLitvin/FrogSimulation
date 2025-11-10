@@ -22,7 +22,7 @@ public class FrogSimulation {
             int hopDistance = hopDistance();
             sum += hopDistance;
         }
-        System.out.println(sum);
+        //System.out.println(sum);
         if (sum >= goalDistance) return true;
         else return false;
 
@@ -33,24 +33,25 @@ public class FrogSimulation {
     //If Frog reaches negative position return false
     // if frog doesn't reach goalDistance return false
 
-    /*public double runSimulations(int num) {
-       double attempt=0;
-        if (simulate()==true)
-            attempt++;
-         else return attempt;
-
-         return 100*(attempt/num);
+    public double runSimulations(int num) {
+        double attempt=0;
+      for (int i=0; i==num;i++) {
+          if (simulate()==true)
+              attempt++;
+          else return attempt;
+      }
+         return (attempt/num);
 
     }
-*/
+
 
     public static void main(String[] args) {
         FrogSimulation instance = new FrogSimulation(24, 5);
         int sim = instance.hopDistance();
         boolean s = instance.simulate();
-        System.out.println(s);
-       // double times= instance.runSimulations(400);
-       // System.out.println(times);
+       // System.out.println(s);
+        double times= instance.runSimulations(400);
+        System.out.println(times);
     }
 
 
